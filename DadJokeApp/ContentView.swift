@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var greeting = "Hello world!"
+    @State var someText = "Hello world!"
     
     var body: some View {
-        Text(greeting)
+        Text(someText)
             .padding()
             .onAppear() {
-                greeting = "Right back at you!"
+                someText = "Right back at you!"
             }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
